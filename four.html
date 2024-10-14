@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="fifth.html">следущее задание ==============></a>
+    <script>
+        const name = prompt("Ваше имя: ");
+        const birth = prompt("Год рождения: ");
+        const year = 2024;
+
+        if ((!Number.isInteger(+birth)||+birth >= year)||birth == ""||birth == null||name==null||name=="") {
+            alert("Год не число или пустое имя");
+        } else {
+            switch ((year - +birth)%10) {
+                case 1:
+                    alert(`${name}:${year - +birth} год`);
+                    break;
+                case 2:
+                case 3:
+                case 4:
+                    alert(`${name}:${year - +birth} года`);
+                    break;
+                default:
+                    alert(`${name}:${year - +birth} лет`);
+            }
+        }
+    </script>
+</body>
+</html>

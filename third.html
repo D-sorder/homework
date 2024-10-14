@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="four.html">следущее задание ==============></a>
+    <script>
+        const name = prompt("Ваше имя: ");
+        const birth = prompt("Год рождения: ");
+        const year = 2024;
+
+        if ((!Number.isInteger(+birth)||+birth >= year)||birth == ""||(name==null||name==undefined)||name=="") {
+            alert("Не правильно введён год рождения");
+        } else {
+            alert(`${name}:${year - +birth}`)
+        }
+    </script>
+</body>
+</html>
